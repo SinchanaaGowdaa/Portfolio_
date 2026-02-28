@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rankbook Learning and Software Solutions</title>
+    <meta name="description" content="Rankbook Learning and Software Solutions - Expert training in programming, web development, data science, and career placement services for Tier-2 and Tier-3 cities. Join 500+ successful graduates." />
+    <meta name="keywords" content="programming training, web development course, data science training, career placement, coding bootcamp, software development, tech jobs, tier-2 cities, tier-3 cities, IT training, job placement" />
+    <meta name="author" content="Rankbook Learning and Software Solutions" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="en" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <link rel="canonical" href="https://rankbook.in" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rankbook.in" />
+    <meta property="og:title" content="Rankbook Learning and Software Solutions - Transform Your Tech Career" />
+    <meta property="og:description" content="Expert programming training, web development courses, and guaranteed job placement for aspiring developers in Tier-2 and Tier-3 cities." />
+    <meta property="og:image" content="https://www.rankbook.in/img/preview_img.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Rankbook Learning Solutions" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://rankbook.in" />
+    <meta name="twitter:title" content="Rankbook Learning and Software Solutions - Transform Your Tech Career" />
+    <meta name="twitter:description" content="Expert programming training, web development courses, and guaranteed job placement for aspiring developers." />
+    <meta name="twitter:image" content="https://www.rankbook.in/img/preview_img.jpg" />
+    <meta name="twitter:creator" content="@RankbookLearning" />
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#6366f1" />
+    <meta name="msapplication-TileColor" content="#6366f1" />
+    <meta name="application-name" content="Rankbook Learning Solutions" />
+    <meta name="apple-mobile-web-app-title" content="Rankbook" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="format-detection" content="telephone=no" />
+   
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-BI6OTbTj.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BRf0YsXV.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </body>
+</html>

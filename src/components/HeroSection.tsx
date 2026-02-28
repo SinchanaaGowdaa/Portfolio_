@@ -1,65 +1,85 @@
 import { motion } from "framer-motion";
-import { MapPin, Mail, Phone, Linkedin, ArrowDown } from "lucide-react";
+import { MapPin, Mail, Phone, Linkedin, ArrowDown, Sparkles } from "lucide-react";
+import heroIllustration from "@/assets/hero-illustration.png";
 
 const HeroSection = () => {
   return (
     <section className="min-h-screen hero-gradient flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Decorative blobs */}
-      <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-primary/10 blur-3xl animate-float" />
-      <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-accent/20 blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
+      {/* Decorative elements */}
+      <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-primary/8 blur-3xl animate-float" />
+      <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-accent/15 blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
+      <div className="absolute top-40 left-1/4 w-48 h-48 rounded-full bg-secondary/30 blur-2xl animate-float" style={{ animationDelay: "0.8s" }} />
 
-      <div className="max-w-6xl mx-auto px-6 py-20 text-center relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <motion.p
-            className="text-primary font-medium tracking-widest uppercase text-sm mb-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
+      <div className="max-w-6xl mx-auto px-6 py-20 relative z-10">
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          {/* Text Content */}
+          <motion.div
+            className="flex-1 text-center lg:text-left"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
           >
-            Software Developer · Quick Learner
-          </motion.p>
-
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight">
-            Sinchana <span className="text-gradient">M</span>
-          </h1>
-
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg md:text-xl leading-relaxed mb-10">
-            Motivated and adaptable professional with a strong interest in software development and hands-on experience building web applications.
-          </p>
-
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
-            <a href="mailto:sinchanamanjunath006@gmail.com" className="flex items-center gap-2 badge-custom px-4 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity">
-              <Mail size={14} /> sinchanamanjunath006@gmail.com
-            </a>
-            <a href="tel:+917019763951" className="flex items-center gap-2 badge-custom px-4 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity">
-              <Phone size={14} /> +91-7019763951
-            </a>
-            <span className="flex items-center gap-2 badge-custom px-4 py-2 rounded-full text-sm font-medium">
-              <MapPin size={14} /> Mandya, Karnataka
-            </span>
-            <a
-              href="https://www.linkedin.com/in/sinchana-gowdaa-3b1a092a2/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 badge-custom px-4 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity"
+            <motion.div
+              className="inline-flex items-center gap-2 badge-custom px-4 py-2 rounded-full text-sm font-medium mb-6"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2 }}
             >
-              <Linkedin size={14} /> LinkedIn
-            </a>
-          </div>
+              <Sparkles size={14} /> Software Developer · Quick Learner
+            </motion.div>
 
-          <motion.a
-            href="#about"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight">
+              Sinchana M
+            </h1>
+
+            <p className="text-muted-foreground max-w-xl text-lg md:text-xl leading-relaxed mb-8">
+              Motivated and adaptable professional with a strong interest in software development and hands-on experience building web applications.
+            </p>
+
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-8">
+              <a href="mailto:sinchanamanjunath006@gmail.com" className="flex items-center gap-2 badge-custom px-4 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity">
+                <Mail size={14} /> Email Me
+              </a>
+              <a href="tel:+917019763951" className="flex items-center gap-2 badge-custom px-4 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity">
+                <Phone size={14} /> Call
+              </a>
+              <span className="flex items-center gap-2 badge-custom px-4 py-2 rounded-full text-sm font-medium">
+                <MapPin size={14} /> Mandya, KA
+              </span>
+              <a
+                href="https://www.linkedin.com/in/sinchana-gowdaa-3b1a092a2/"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 badge-custom px-4 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity"
+              >
+                <Linkedin size={14} /> LinkedIn
+              </a>
+            </div>
+
+            <motion.a
+              href="#about"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-full font-medium hover:opacity-90 transition-opacity shadow-lg"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Explore My Work <ArrowDown size={16} />
+            </motion.a>
+          </motion.div>
+
+          {/* Illustration */}
+          <motion.div
+            className="flex-1 flex justify-center"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Explore My Work <ArrowDown size={16} />
-          </motion.a>
-        </motion.div>
+            <img
+              src={heroIllustration}
+              alt="Developer workspace illustration"
+              className="w-80 md:w-96 lg:w-[28rem] rounded-3xl shadow-2xl"
+            />
+          </motion.div>
+        </div>
       </div>
     </section>
   );
