@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Mail, Phone, Linkedin, ArrowDown, Sparkles } from "lucide-react";
+import { MapPin, Mail, Linkedin, ArrowDown, Sparkles } from "lucide-react";
 import heroIllustration from "@/assets/hero-illustration.png";
 
 const HeroSection = () => {
@@ -29,7 +29,7 @@ const HeroSection = () => {
             </motion.div>
 
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight">
-              Sinchana M
+              Sinchana Manjunath
             </h1>
 
             <p className="text-muted-foreground max-w-xl text-lg md:text-xl leading-relaxed mb-8">
@@ -39,9 +39,6 @@ const HeroSection = () => {
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-8">
               <a href="mailto:sinchanamanjunath006@gmail.com" className="flex items-center gap-2 badge-custom px-4 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity">
                 <Mail size={14} /> Email Me
-              </a>
-              <a href="tel:+917019763951" className="flex items-center gap-2 badge-custom px-4 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity">
-                <Phone size={14} /> Call
               </a>
               <span className="flex items-center gap-2 badge-custom px-4 py-2 rounded-full text-sm font-medium">
                 <MapPin size={14} /> Mandya, KA
@@ -76,7 +73,7 @@ const HeroSection = () => {
             <img
               src={heroIllustration}
               alt="Developer workspace illustration"
-              className="w-80 md:w-96 lg:w-[28rem] rounded-3xl shadow-2xl"
+              className="w-56 md:w-64 lg:w-72 rounded-3xl shadow-2xl"
             />
           </motion.div>
         </div>
