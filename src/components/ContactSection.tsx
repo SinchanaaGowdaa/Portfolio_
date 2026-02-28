@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, Linkedin, MapPin } from "lucide-react";
+import { Mail, Linkedin, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -19,10 +19,9 @@ const ContactSection = () => {
           </p>
           <div className="w-16 h-1 bg-primary rounded-full mx-auto mb-10" />
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-3xl mx-auto">
+          <div className="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
             {[
               { icon: Mail, label: "Email", value: "sinchanamanjunath006@gmail.com", href: "mailto:sinchanamanjunath006@gmail.com" },
-              { icon: Phone, label: "Phone", value: "+91-7019763951", href: "tel:+917019763951" },
               { icon: Linkedin, label: "LinkedIn", value: "Sinchana Gowda", href: "https://www.linkedin.com/in/sinchana-gowdaa-3b1a092a2/" },
               { icon: MapPin, label: "Location", value: "Mandya, Karnataka" },
             ].map((item, i) => (
