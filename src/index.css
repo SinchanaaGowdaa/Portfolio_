@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -36,8 +36,17 @@
 
     --radius: 0.75rem;
 
-    --hero-gradient: linear-gradient(135deg, hsl(350, 40%, 94%) 0%, hsl(25, 45%, 94%) 40%, hsl(350, 35%, 92%) 100%);
-    --card-gradient: linear-gradient(145deg, hsl(10, 35%, 98%) 0%, hsl(25, 35%, 96%) 100%);
+    --hero-gradient: linear-gradient(
+      135deg,
+      hsl(350, 40%, 94%) 0%,
+      hsl(25, 45%, 94%) 40%,
+      hsl(350, 35%, 92%) 100%
+    );
+    --card-gradient: linear-gradient(
+      145deg,
+      hsl(10, 35%, 98%) 0%,
+      hsl(25, 35%, 96%) 100%
+    );
     --badge-bg: 350 45% 93%;
     --badge-text: 350 45% 38%;
     --section-alt: 25 40% 95%;
@@ -81,8 +90,17 @@
     --input: 350 14% 18%;
     --ring: 350 60% 62%;
 
-    --hero-gradient: linear-gradient(135deg, hsl(350, 18%, 10%) 0%, hsl(350, 14%, 12%) 50%, hsl(350, 18%, 10%) 100%);
-    --card-gradient: linear-gradient(145deg, hsl(350, 16%, 13%) 0%, hsl(350, 14%, 10%) 100%);
+    --hero-gradient: linear-gradient(
+      135deg,
+      hsl(350, 18%, 10%) 0%,
+      hsl(350, 14%, 12%) 50%,
+      hsl(350, 18%, 10%) 100%
+    );
+    --card-gradient: linear-gradient(
+      145deg,
+      hsl(350, 16%, 13%) 0%,
+      hsl(350, 14%, 10%) 100%
+    );
     --badge-bg: 350 25% 18%;
     --badge-text: 350 50% 75%;
     --section-alt: 350 16% 10%;
@@ -105,11 +123,16 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif;
   }
 }
 
@@ -131,4 +154,5 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 64px;
 }

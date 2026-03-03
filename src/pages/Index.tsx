@@ -13,10 +13,17 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
-      <section id="about" className="py-16 md:py-20">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section id="about" className="py-6 md:py-8">
+        <div className="max-w-2xl mx-auto px-4 text-center">
           <p className="text-muted-foreground text-lg leading-relaxed italic font-serif">
-            "Experienced in coordinating with stakeholders, assisting in requirement discussions, and working closely with development teams to ensure timely and aligned project delivery. Strong documentation, presentation, and communication skills along with front-end development."
+            "Full-stack developer specializing in building and deploying
+            scalable, high-performance web applications. Experienced in crafting
+            responsive front-end solutions and managing production-ready
+            deployments. Skilled in translating requirements into functional
+            demo products and proof-of-concepts while collaborating closely with
+            stakeholders to ensure aligned, on-time delivery. Strong in
+            communication, documentation, and cross-team coordination from
+            concept to launch."
           </p>
         </div>
       </section>

@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import SectionWrapper from "./SectionWrapper";
 import { Briefcase } from "lucide-react";
 import rankbookLogo from "@/assets/rankbook-logo.png";
+import kdem from "@/assets/kdem-logo.png";
+import dotch from "@/assets/dotch-logo.png";
 
 const experiences = [
   {
@@ -18,7 +20,7 @@ const experiences = [
     period: "Jun 2025 – Jul 2025",
     description:
       "Contributed to Mysuru Tech Summit 2025, coordinated with stakeholders, facilitated smooth communication between teams. Gained exposure to large-scale project coordination and ecosystem-level collaboration.",
-    logo: null,
+    logo: kdem,
   },
   {
     company: "DOTCH Endeavour Pvt Ltd",
@@ -26,13 +28,18 @@ const experiences = [
     period: "Oct 2023 – Nov 2023",
     description:
       "Worked on live client projects involving web development and gained practical exposure to development workflows and team collaboration.",
-    logo: null,
+    logo: dotch,
   },
 ];
 
 const ExperienceSection = () => {
   return (
-    <SectionWrapper id="experience" title="Experience" subtitle="My professional journey" alt>
+    <SectionWrapper
+      id="experience"
+      title="Experience"
+      subtitle="My professional journey"
+      alt
+    >
       <div className="space-y-8">
         {experiences.map((exp, i) => (
           <motion.div
@@ -46,20 +53,30 @@ const ExperienceSection = () => {
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 overflow-hidden">
                 {exp.logo ? (
-                  <img src={exp.logo} alt={exp.company} className="w-10 h-10 object-contain" />
+                  <img
+                    src={exp.logo}
+                    alt={exp.company}
+                    className="w-10 h-10 object-contain"
+                  />
                 ) : (
                   <Briefcase size={20} className="text-primary" />
                 )}
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap items-center gap-3 mb-2">
-                  <h3 className="font-serif font-semibold text-foreground text-lg">{exp.role}</h3>
+                  <h3 className="font-serif font-semibold text-foreground text-lg">
+                    {exp.role}
+                  </h3>
                   <span className="badge-custom px-3 py-1 rounded-full text-xs font-medium">
                     {exp.period}
                   </span>
                 </div>
-                <p className="text-sm font-medium text-primary mb-3">{exp.company}</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">{exp.description}</p>
+                <p className="text-sm font-medium text-primary mb-3">
+                  {exp.company}
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {exp.description}
+                </p>
               </div>
             </div>
           </motion.div>

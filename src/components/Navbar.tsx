@@ -22,12 +22,12 @@ const Navbar = () => {
       transition={{ type: "spring", stiffness: 100, damping: 20 }}
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-background/80 border-b border-border"
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#" className="font-serif text-xl font-bold text-foreground">
-          Sinchana<span className="text-primary">.</span>
+          Sinchana M<span className="text-primary"></span>
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -42,7 +42,10 @@ const Navbar = () => {
 
         <div className="flex items-center gap-3 md:hidden">
           <ThemeToggle />
-          <button onClick={() => setMobileOpen(!mobileOpen)} className="text-foreground">
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="text-foreground"
+          >
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
@@ -56,7 +59,7 @@ const Navbar = () => {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-card border-b border-border overflow-hidden"
           >
-            <div className="px-6 py-4 flex flex-col gap-4">
+            <div className="px-4 py-3 flex flex-col gap-3">
               {navLinks.map((link) => (
                 <a
                   key={link.href}

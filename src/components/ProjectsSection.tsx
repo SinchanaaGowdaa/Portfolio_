@@ -5,27 +5,31 @@ import { ExternalLink, Sparkles } from "lucide-react";
 const projects = [
   {
     title: "Skill Karnataka",
-    description: "Designed a platform to showcase training programs and job fair details across Karnataka. Worked on the frontend using ReactJS, implementing reusable components and responsive UI.",
+    description:
+      "Designed a platform to showcase training programs and job fair details across Karnataka. Worked on the frontend using ReactJS, implementing reusable components and responsive UI.",
     tags: ["ReactJS", "Responsive UI", "Components"],
-    emoji: "🎓",
   },
   {
     title: "Rideze Eco",
-    description: "Contributed to Mysuru's first EV car booking platform. Built and enhanced frontend screens and booking workflows using Flutter. Integrated backend services using Supabase.",
+    description:
+      "Contributed to Mysuru's first EV car booking platform. Built and enhanced frontend screens and booking workflows using Flutter. Integrated backend services using Supabase.",
     tags: ["Flutter", "Supabase", "EV Booking"],
-    emoji: "🚗",
   },
   {
     title: "TheKreativerse",
-    description: "Developed a responsive digital marketing website using web technologies and implemented service listing and client engagement features.",
+    description:
+      "Developed a responsive digital marketing website using web technologies and implemented service listing and client engagement features.",
     tags: ["Web Dev", "Digital Marketing", "Responsive"],
-    emoji: "🎨",
   },
 ];
 
 const ProjectsSection = () => {
   return (
-    <SectionWrapper id="projects" title="Projects" subtitle="Things I've built with love">
+    <SectionWrapper
+      id="projects"
+      title="Projects"
+      subtitle="Things I've built with love"
+    >
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, i) => (
           <motion.div
@@ -37,12 +41,18 @@ const ProjectsSection = () => {
             whileHover={{ y: -5 }}
             className="card-gradient rounded-2xl p-6 border border-border shadow-sm hover:shadow-lg transition-all group"
           >
-            <div className="text-4xl mb-4">{project.emoji}</div>
-            <h3 className="font-serif text-xl font-semibold text-foreground mb-2">{project.title}</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">{project.description}</p>
+            <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
+              {project.title}
+            </h3>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+              {project.description}
+            </p>
             <div className="flex flex-wrap gap-2">
               {project.tags.map((tag) => (
-                <span key={tag} className="badge-custom px-3 py-1 rounded-full text-xs font-medium">
+                <span
+                  key={tag}
+                  className="badge-custom px-3 py-1 rounded-full text-xs font-medium"
+                >
                   {tag}
                 </span>
               ))}
