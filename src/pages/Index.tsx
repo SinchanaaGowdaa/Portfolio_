@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
@@ -9,6 +11,29 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const section = location.pathname.replace(/^\//, "");
+    const allowed = new Set([
+      "about",
+      "skills",
+      "experience",
+      "projects",
+      "education",
+      "contact",
+    ]);
+
+    if (!allowed.has(section)) return;
+
+    const id = section;
+    // Wait a tick so layout renders before scrolling
+    window.requestAnimationFrame(() => {
+      const el = document.getElementById(id);
+      el?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, [location.pathname]);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />

@@ -4,12 +4,12 @@ import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Education", href: "#education" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "#/about" },
+  { label: "Skills", href: "#/skills" },
+  { label: "Experience", href: "#/experience" },
+  { label: "Projects", href: "#/projects" },
+  { label: "Education", href: "#/education" },
+  { label: "Contact", href: "#/contact" },
 ];
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-background/80 border-b border-border"
     >
       <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="#" className="font-serif text-xl font-bold text-foreground">
+        <a href="#/" className="font-serif text-xl font-bold text-foreground">
           Sinchana M<span className="text-primary"></span>
         </a>
 

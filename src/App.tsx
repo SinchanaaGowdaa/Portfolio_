@@ -18,6 +18,7 @@ const App = () => (
         <HashRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/:section" element={<Index />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </HashRouter>
