@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sinchana M – Portfolio
 
 This is a personal portfolio site for **Sinchana M**, showcasing skills, projects, education, and contact information.
@@ -17,3 +18,6 @@ npm run dev
 ```
 
 Then open `http://localhost:8080/Portfolio_/#/` in your browser.
+=======
+# Portfolio_
+>>>>>>> a25b6c7c7ebde4459c10274a3c5e191c297136dc
