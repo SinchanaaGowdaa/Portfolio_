@@ -3,7 +3,7 @@ import { MapPin, Mail, Linkedin, ArrowDown, Sparkles } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-[35vh] hero-gradient flex items-start justify-center relative overflow-hidden py-6">
+    <section className="hero-gradient flex items-start justify-center relative overflow-hidden py-4 md:py-6">
       {/* Decorative elements (subtle) */}
       <div className="absolute top-12 right-8 w-36 h-36 rounded-full bg-primary/8 blur-3xl animate-float" />
       <div
@@ -11,7 +11,7 @@ const HeroSection = () => {
         style={{ animationDelay: "1.5s" }}
       />
 
-      <div className="max-w-2xl mx-auto px-4 py-6 relative z-10">
+      <div className="max-w-2xl mx-auto px-4 pt-8 md:pt-10 pb-4 md:pb-6 relative z-10">
         <div className="flex flex-col items-start gap-3">
           {/* Text Content */}
           <motion.div

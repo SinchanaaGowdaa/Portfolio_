@@ -13,7 +13,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
-      <section id="about" className="py-6 md:py-8">
+      <section id="about" className="pt-4 md:pt-6 pb-6">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <p className="text-muted-foreground text-lg leading-relaxed italic font-serif">
             "Full-stack developer specializing in building and deploying

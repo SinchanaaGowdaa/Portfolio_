@@ -21,8 +21,19 @@ const ContactSection = () => {
 
           <div className="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
             {[
-              { icon: Mail, label: "Email", value: "sinchanamanjunath006@gmail.com", href: "mailto:sinchanamanjunath006@gmail.com" },
-              { icon: Linkedin, label: "LinkedIn", value: "Sinchana Gowda", href: "https://www.linkedin.com/in/sinchana-gowdaa-3b1a092a2/" },
+              {
+                icon: Mail,
+                label: "Email",
+                value: "sinchanamanjunath006@gmail.com",
+                href: "mailto:sinchanamanjunath006@gmail.com",
+                isEmail: true,
+              },
+              {
+                icon: Linkedin,
+                label: "LinkedIn",
+                value: "Sinchana Gowda",
+                href: "https://www.linkedin.com/in/sinchana-gowdaa-3b1a092a2/",
+              },
               { icon: MapPin, label: "Location", value: "Mandya, Karnataka" },
             ].map((item, i) => (
               <motion.div
@@ -36,11 +47,20 @@ const ContactSection = () => {
                 <item.icon size={20} className="text-primary mx-auto mb-2" />
                 <p className="text-xs text-muted-foreground mb-1">{item.label}</p>
                 {item.href ? (
-                  <a href={item.href} target="_blank" rel="noreferrer" className="text-sm font-medium text-foreground hover:text-primary transition-colors break-all">
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={`text-sm font-medium text-foreground hover:text-primary transition-colors ${
+                      item.isEmail ? "break-all" : "whitespace-nowrap"
+                    }`}
+                  >
                     {item.value}
                   </a>
                 ) : (
-                  <p className="text-sm font-medium text-foreground">{item.value}</p>
+                  <p className="text-sm font-medium text-foreground whitespace-nowrap">
+                    {item.value}
+                  </p>
                 )}
               </motion.div>
             ))}
