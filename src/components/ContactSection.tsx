@@ -34,7 +34,7 @@ const ContactSection = () => {
                 value: "Sinchana Gowda",
                 href: "https://www.linkedin.com/in/sinchana-gowdaa-3b1a092a2/",
               },
-              { icon: MapPin, label: "Location", value: "Mandya, Karnataka" },
+              { icon: MapPin, label: "Location", value: "Bengaluru, Karnataka" },
             ].map((item, i) => (
               <motion.div
                 key={item.label}
